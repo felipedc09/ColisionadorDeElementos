@@ -12,6 +12,11 @@ Flujo 2: Si el usuario no marca el boton "Movimiento aleatorio", indica que el u
 
 Cada vez que los dos colisionen, se debe advertir al usuario que dichos elementos colisionaron.
 
+# Modelado
+
+#   Diagrama de caso de uso
 ![alt text](https://github.com/felipedc09/ColisionadorDeElementos/blob/master/Diagrama%20UML%20del%20caso%20de%20uso.png)
 
+#   Diagrama de clases
 
+![alt text](https://github.com/felipedc09/ColisionadorDeElementos/blob/master/Diagrama%20de%20clases.png)
