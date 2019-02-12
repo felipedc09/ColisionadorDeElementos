@@ -6,9 +6,11 @@ Carmen Aldana
 Felipe Duitama
 
 # Descripción del requerimiento
-Entregar un modelado y una implementación que contenga la iteración de dos elementos, los cuales se pueden desplazar en una pantalla, el movimiento puede ser originado por el usuario o aleatoriamente por cada elemento; cada vez que los dos colisionen, se debe advertir al usuario que dichos elementos colisionaron.
+Entregar un modelado y una implementación que contenga la iteración de dos elementos, los cuales se pueden desplazar en una pantalla, el movimiento puede ser originado por el usuario o aleatoriamente por cada elemento, a traves de un menú de opciones, se generara el movimiento de la siguiente manera: 
+Flujo 1: Si el usuario selecciona el boton "Movimiento aleatorio" los dos elementos se moveran aleatoriamente, el sistema sera el responsable de generar el movimiento y la colisión de los mismos.
+Flujo 2: Si el usuario no marca el boton "Movimiento aleatorio", indica que el usuario es quien selecciona los elementos, genera el movimiento sobre ellos y la colisión. 
 
-
+Cada vez que los dos colisionen, se debe advertir al usuario que dichos elementos colisionaron.
 
 
 
