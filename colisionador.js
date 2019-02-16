@@ -33,7 +33,7 @@ class Elemento {
 				this.y < elemento.y + elemento.height &&
 				this.height + this.y > elemento.y 
 				&& elemento !== this) {
-				alert("se dieroon");
+				alert("Elementos colisionados");
 				return null;
 			}else{
 				return this;
