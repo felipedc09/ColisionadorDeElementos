@@ -29,7 +29,7 @@ Entregar un modelado y una implementación que contenga la iteración de dos ele
 ## c.	Elementos:
 * Los elementos corresponden a dos figuras geométricas cuadradas.
 * La dimensión de cada elemento debe ser de 1.5 cm lado por lado.
-* El color estimado para un elemento es de color negro y para el otro elemento es de color verde.
+* El color estimado para un elemento es de color rojo y para el otro elemento es de color verde.
 * Los elementos se podrán desplazar por una ventana.
 *	Los elementos tendrán un movimiento determinado por el usuario y asociado al movimiento del mouse.
 *	Los elementos se ubicaran dentro de una ventana.
@@ -44,13 +44,17 @@ Entregar un modelado y una implementación que contenga la iteración de dos ele
 *	La colisión de elementos se reportará mediante una ventana informativa.
 *	El mensaje de reporte al usuario será: “Elementos colisionados”
 
-##2.	Análisis del requerimiento:
+## 2.	Análisis del requerimiento:
 ## a.	Interfaz (Ventana):
 *	Se utilizará el elemento canvas de HTML para dibujar las dimensiones de la ventana.
 *	El diseño (Relleno y trazado de la ventana ) y comportamiento (Acciones sobre la ventana) serán elaborados a través de sentencias de JavaScript.
 *	Gráficamente, la ventana se visualizará de la siguiente manera:
 
+![alt text](https://github.com/felipedc09/ColisionadorDeElementos/upload/master/Diseño%_%20Ventana.png)
+
 *	Mediante un método se construirá y se contendrán dos elementos en la ventana que gráficamente se visualizarán de la siguiente forma:
+
+![alt text](https://github.com/felipedc09/ColisionadorDeElementos/upload/master/Elementos%_%20Ventana.png)
 
 *	Mediante los siguientes métodos se controlarán los eventos sobre la pantalla
    * Seleccionar elemento
