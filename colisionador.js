@@ -33,8 +33,10 @@ class Elemento {
 				this.y < elemento.y + elemento.height &&
 				this.height + this.y > elemento.y 
 				&& elemento !== this) {
-				// collision detected!
 				alert("se dieroon");
+				return null;
+			}else{
+				return this;
 			}
 		});
 	}
@@ -98,7 +100,7 @@ class Ventana {
 			var mousePos = this.posicionMouse(evt);
 			if(elementoActual){
 				elementoActual.mover(mousePos.x - inicioX, mousePos.y - inicioY);
-				elementoActual.colisionar(this.elementos);
+				elementoActual = elementoActual.colisionar(this.elementos);
 			}
 			
 			this.pintarElementos();
