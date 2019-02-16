@@ -10,6 +10,7 @@ Entregar un modelado y una implementación de:
 
 ## 1. Identificación de Requisitos
 Para el caso de estudio se pretende realizar la identificación, análisis y descripción de los requerimientos asociados con:
+
 	La interfaz.
 	Los  elementos que interactúan.
 	El movimiento o desplazamiento de los elementos.
@@ -23,7 +24,7 @@ Entregar un modelado y una implementación que contenga la iteración de dos ele
 	La dimensión definida para la ventana, corresponde a 700 x 700 pixeles.
 	El color estimado para la ventana es beige.
 	Contendrá dos elementos que van a colisionar.
-	No permitirá el movimiento de los elementos fuera del contorno de la ventana 
+	No permitirá el movimiento de los elementos fuera del contorno de la ventana.
 	Controlará los eventos realizados 
 ## c.	Elementos:
 	Los elementos corresponden a dos figuras geométricas cuadradas.
@@ -40,7 +41,7 @@ Entregar un modelado y una implementación que contenga la iteración de dos ele
 ## e.	Colisión de elementos:
 	La colisión de los elementos se generará cuando dos elementos, en un mismo momento, ocupen el mismo espacio en una ventana.
 ## f.	Reportar al usuario la colisión de elementos:
-	La colisión de elementos se reportará mediante una ventana informativa
+	La colisión de elementos se reportará mediante una ventana informativa.
 	El mensaje de reporte al usuario será: “Elementos colisionados”
 
 ##2.	Análisis del requerimiento:
@@ -57,6 +58,7 @@ o	Arrastrar elemento
 o	Desmarcar elemento
 
 ## b.	Movimiento de los Elementos:
+
 	El movimiento de los elementos se originará cuando el usuario realice movimientos con el mouse sobre la ventana.
 	Los elementos se moverán mediante la implementación de un método que al escuchar los eventos que se generen sobre la ventana a través del mouse, realizaran las siguientes acciones:
 o	Seleccionar elemento – “mousedown”: Se utilizará para validar si el puntero del mouse está en la misma posición del elemento para dejar marcado dicho elemento.
