@@ -100,7 +100,7 @@ class Ventana {
 			var mousePos = this.posicionMouse(evt);
 			if(elementoActual){
 				elementoActual.mover(mousePos.x - inicioX, mousePos.y - inicioY);
-				elementoActual = elementoActual.colisionar(this.elementos);
+				elementoActual.colisionar(this.elementos);
 			}
 			
 			this.pintarElementos();
