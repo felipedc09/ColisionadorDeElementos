@@ -1,9 +1,9 @@
 function init() {
 	var elements = [];
 	elements.push(new Elemento(50, 50, 50, 50, "red"));
-	elements.push(new Elemento(500, 500, 50, 50, "green"));
-	elements.push(new Elemento(400, 400, 50, 50, "blue"));
-	elements.push(new Elemento(400, 300, 50, 50, "purple"));
+	// elements.push(new Elemento(500, 500, 50, 50, "green"));
+	// elements.push(new Elemento(400, 400, 50, 50, "blue"));
+	// elements.push(new Elemento(400, 300, 50, 50, "purple"));
 
 	var ventana = new Ventana(700, 700, "beige", elements);
 	ventana.asignarCanvas("colisionador");
@@ -51,6 +51,8 @@ class Ventana {
 	}
 
 	pintarElementos() {
+		this.ctx.fillStyle = this.color;
+			this.ctx.fillRect(0, 0, this.width, this.height);
 		this.elementos.forEach((elemento)=> {
 			this.ctx.fillStyle = elemento.color;
 			this.ctx.fillRect(elemento.x, elemento.y, elemento.width, elemento.height);
@@ -66,29 +68,47 @@ class Ventana {
 	}
 
 	escucharEventos() {
-		var arrastrar;
-		var delta;
+		var elementoActual;
+		var inicioX;
+		var inicioY
 
 		this.canvas.addEventListener("mousedown", (evt) => {
+			console.log("clientX: " ,evt.clientX, "clientY: ", evt.clientY)
 			var mousePos = this.oMousePos(this.canvas, evt);
-			if (this.ctx.isPointInPath(mousePos.x, mousePos.y)) {
-				arrastrar = true;
-				delta.x = X - mousePos.x;
-				delta.y = Y - mousePos.y;
-			}
+			this.elementos.forEach((elemento)=>{
+				console.log("element: ", elemento.x," - ", elemento.y);
+				if (this.ctx.isPointInPath(mousePos.x, mousePos.y)) {
+					elementoActual=elemento;
+inicioX = evt.clientX-elemento.x;
+inicioY = evt.clientY-elemento.Y;
+					console.log(" -- "+ elementoActual);
+				}
+			});
+			// var mousePos = this.oMousePos(this.canvas, evt);
+			// if (this.ctx.isPointInPath(mousePos.x, mousePos.y)) {
+			// 	arrastrar = true;
+			// 	delta.x = X - mousePos.x;
+			// 	delta.y = Y - mousePos.y;
+			// }
 		}, false);
 
 		this.canvas.addEventListener("mousemove", (evt) => {
-			var mousePos = this.oMousePos(this.canvas, evt);
-			console.log("se movio")
-			if (arrastrar) {
-				this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
-				X = mousePos.x + delta.x, Y = mousePos.y + delta.y
+			console.log(elementoActual + " -- ")
+			if(elementoActual != null){
+				elementoActual.x = evt.clientX;
+				elementoActual.y = evt.clientY;
 			}
+			this.pintarElementos();
+			// var mousePos = this.oMousePos(this.canvas, evt);
+			// console.log("se movio")
+			// if (arrastrar) {
+			// 	this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
+			// 	X = mousePos.x + delta.x, Y = mousePos.y + delta.y
+			// }
 		}, false);
 
 		this.canvas.addEventListener("mouseup", (evt) => {
-			arrastrar = false;
+			elementoActual = null;
 		}, false);
 	}
 }
