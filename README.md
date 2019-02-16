@@ -50,11 +50,11 @@ Entregar un modelado y una implementación que contenga la iteración de dos ele
 *	El diseño (Relleno y trazado de la ventana ) y comportamiento (Acciones sobre la ventana) serán elaborados a través de sentencias de JavaScript.
 *	Gráficamente, la ventana se visualizará de la siguiente manera:
 
-![alt text](https://github.com/felipedc09/ColisionadorDeElementos/upload/master/Diseño%_%20Ventana.png)
+![alt text](https://github.com/felipedc09/ColisionadorDeElementos/blob/master/Dise%C3%B1o_Ventana.png)
 
 *	Mediante un método se construirá y se contendrán dos elementos en la ventana que gráficamente se visualizarán de la siguiente forma:
 
-![alt text](https://github.com/felipedc09/ColisionadorDeElementos/upload/master/Elementos%_%20Ventana.png)
+![alt text](https://github.com/felipedc09/ColisionadorDeElementos/blob/master/Elementos_Ventana.png)
 
 *	Mediante los siguientes métodos se controlarán los eventos sobre la pantalla
    * Seleccionar elemento
@@ -65,9 +65,10 @@ Entregar un modelado y una implementación que contenga la iteración de dos ele
 
 * El movimiento de los elementos se originará cuando el usuario realice movimientos con el mouse sobre la ventana.
 * Los elementos se moverán mediante la implementación de un método que al escuchar los eventos que se generen sobre la ventana a través del mouse, realizaran las siguientes acciones:
-      * Seleccionar elemento – “mousedown”: Se utilizará para validar si el puntero del mouse está en la misma posición del elemento para dejar marcado dicho elemento.
-      * Arrastrar elemento  – “mousemove”: Se utilizará cuando se realice un clic sostenido sobre la ventana con el fin de llamar la función que pinte los elementos sobre la ventana y siga el puntero del mouse.
-      * Desmarcar elemento: “moveup”: Se utilizará para liberar el elemento luego de soltar el clic del mouse.
+
+* Seleccionar elemento – “mousedown”: Se utilizará para validar si el puntero del mouse está en la misma posición del elemento para dejar marcado dicho elemento.
+* Arrastrar elemento  – “mousemove”: Se utilizará cuando se realice un clic sostenido sobre la ventana con el fin de llamar la función que pinte los elementos sobre la ventana y siga el puntero del mouse.
+* Desmarcar elemento: “moveup”: Se utilizará para liberar el elemento luego de soltar el clic del mouse.
 
 ## Modelado
 
