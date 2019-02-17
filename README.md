@@ -70,9 +70,26 @@ Entregar un modelado y una implementación que contenga la iteración de dos ele
 * Arrastrar elemento  – “mousemove”: Se utilizará cuando se realice un clic sostenido sobre la ventana con el fin de llamar la función que pinte los elementos sobre la ventana y siga el puntero del mouse.
 * Desmarcar elemento: “moveup”: Se utilizará para liberar el elemento luego de soltar el clic del mouse.
 
+## c.	Pintar elementos:
+
+Mediante un método se realizará dos acciones para pindar las figuras geometricas cuadradas:
+
+* Pintar cada elemento en el canvas: Crea una figura geométrica cuadrada con la posición, el ancho y alto de cada elemento.
+* Actualizar el fondo: Se re-pintará la ventana, recorriendo la lista de elementos que tiene la ventana y asignando su color.
+
+## d.	Colisión de los Elementos:
+
+Mediante un método, se controlará cuando los dos elementos en un mismo momento, ocupen el mismo espacio en la ventana.
+
+## e.	Reporte de Colisión de los Elementos:
+
+Mediante un método, se generará una alerta cuando los dos elementos, ocupen el mismo espacio en la ventana en un mismo momento.
+
 ## Modelado
 
-### Diagrama de caso de uso
+## Identificación de casos de uso
+
+### Diagrama UML del caso de uso "Generar Movimiento"
 ![alt text](https://github.com/felipedc09/ColisionadorDeElementos/blob/master/Diagrama%20UML%20del%20caso%20de%20uso.png)
 
 ### Diagrama de clases
