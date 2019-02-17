@@ -33,7 +33,14 @@ class Elemento {
 				this.y < elemento.y + elemento.height &&
 				this.height + this.y > elemento.y 
 				&& elemento !== this) {
-				alert("Elementos colisionados");
+					$('#fondo').fadeIn();     
+					setTimeout(function() {
+						 $("#fondo").fadeOut();           
+					},2000);
+					$('#mensaje').fadeIn();     
+					setTimeout(function() {
+						 $("#mensaje").fadeOut();           
+					},2000);
 				return null;
 			}else{
 				return this;
