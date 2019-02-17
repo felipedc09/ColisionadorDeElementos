@@ -41,9 +41,6 @@ class Elemento {
 					setTimeout(function() {
 						 $("#mensaje").fadeOut();           
 					},2000);
-				return null;
-			}else{
-				return this;
 			}
 		});
 	}
