@@ -87,11 +87,10 @@ Mediante un método, se generará una alerta cuando los dos elementos, ocupen el
 
 ## Modelado
 
-## Identificación de casos de uso
+## a. Identificación de casos de uso
 
-### Diagrama UML del caso de uso "Generar Movimiento"
 ![alt text](https://github.com/felipedc09/ColisionadorDeElementos/blob/master/Diagrama%20UML%20del%20caso%20de%20uso.png)
 
-### Diagrama de clases
+### b. Diagrama de clases
 
 ![alt text](https://github.com/felipedc09/ColisionadorDeElementos/blob/master/Diagrama%20de%20clases.png)
