@@ -1,6 +1,6 @@
 function init() {
 	var elements = [];
-	elements.push(new Elemento(150, 150, 50, 50, "red"));
+	elements.push(new Elemento(150, 150, 50, 50, "black"));
 	elements.push(new Elemento(500, 500, 50, 50, "green"));
 	// elements.push(new Elemento(400, 400, 50, 50, "blue"));
 	// elements.push(new Elemento(400, 300, 50, 50, "purple"));
